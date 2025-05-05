@@ -1,0 +1,236 @@
+.cartEmptyContainer{
+    background-color: white;
+    color: black;
+    height: 88vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.cartEmptyContainer p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.cartEmptyContainer .shopBtn{
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.shopBtn:hover{
+    background-color: rgba(32, 44, 61, 0.781);
+    color: white;
+}
+
+.mainCartContainer{
+    display: flex;
+    padding: 2px 10px;
+    gap: 5px;
+}
+.cartSummaryContainer{
+    border-radius: 5px;
+    width: 30%;
+    height: 410px;
+    margin-top: 0.5%;
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+}
+.cartContainer{
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    height: 88vh;
+    width: 70%;
+    margin-top: 0.5%;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cCard{
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 5px rgba(32, 44, 61, 0.781);
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    border-radius: 5px;
+}
+.cImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cImage img{
+    width: 180px;
+    height: 135px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.cCardInfo{
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cCartDetail{
+    /* border: 2px solid black; */
+    padding: 10px 5px;
+    width: 100%;
+}
+.cTitle .title{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.cPriceDetail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+.cDiscountPrice p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cOriginalPrice p{
+    font-size: 15px;
+    color: grey;
+    text-decoration: line-through;
+}
+.cDiscount p{
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}
+
+.removeIncDecBtn{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.cQuantityDetail{
+    border: 2px solid black;
+    width: 15%;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 5px; */
+}
+.btn{
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: rgba(32, 44, 61, 0.781);
+    color: white;
+}
+
+.input{
+    /* border: 2px solid black; */
+    width: 100%;
+    padding: 5px 0px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.cRemoveDetail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.remBtn{
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 5px 20px;
+    font-size: 18px;
+    color: grey;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.remBtn:hover{
+    background-color: rgba(32, 44, 61, 0.781);
+    color: white;
+}
+
+@media only screen and (max-width:1024px){
+    .mainCartContainer{
+        flex-direction: column;
+    }   
+    .cartSummaryContainer{
+        width: 100%;
+    }
+    .cartContainer{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .removeIncDecBtn{
+        padding: 0;
+    }
+    .cQuantityDetail{
+        width: 20%;
+    }
+    .cartSummaryContainer{
+        height: 100%;
+        padding: 0px 5px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .cCard{
+        flex-direction: column;
+    }
+    .cQuantityDetail{
+        width: 30%;
+    }
+    .cartEmptyContainer{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .cCard{
+        flex-direction: column;
+    }
+    .cQuantityDetail{
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .cCard{
+        flex-direction: column;
+    }
+    .cQuantityDetail{
+        width: 45%;
+    }
+}

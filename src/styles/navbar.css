@@ -1,0 +1,80 @@
+.navContainer {
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* height: 10vh; */
+  background-color: rgba(32, 44, 61, 0.781);
+}
+.navLogo {
+  /* border: 2px solid black; */
+  padding: 12px 2px;
+  cursor: pointer;
+}
+.navLogo .navheading {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.navLogo .navheading a {
+  color: inherit;
+  text-decoration: none;
+}
+.navLogo a:hover {
+  border-bottom: 3px solid white;
+}
+
+.navList {
+    display: flex;
+    gap: 20px;
+}
+.navList .navItem {
+    /* border: 2px solid black; */
+    padding: 10px 8px;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+.navList .navItem a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navList .navItem .counter {
+    font-size: 25px;
+    color: red;
+}
+.navList .navItem .bag {
+  font-size: 25px;
+}
+
+.navItem .wishCount {
+  position: absolute;
+  top: -2px;
+  right: -8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 16px;
+  background-color: rgba(50, 50, 50, 0.9);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.navItem .cartCount {
+  position: absolute;
+  top: -2px;
+  right: -8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 16px;
+  background-color: rgba(50, 50, 50, 0.9);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}

@@ -1,0 +1,153 @@
+.checkContainer{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px 6px;
+    background-color: rgba(255, 255, 255, 0.966);
+    color: black;
+}
+.checkoutHeading h2{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.summarySection, .orderSummarySection, .shipmentSection{
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 2px rgba(32, 44, 61, 0.781);
+    border-radius: 5px;
+    padding: 5px 3px;
+}
+.checkTitle p, .orderTitle p, .contactTitle p, .paymentTitle p{
+    font-size: 25px;
+    font-weight: 400;
+    padding: 5px 0px;
+}
+.summaryList .checkPrice p{
+    font-size: 20px;
+    padding: 4px 0px;
+}
+
+.checkPrice span .discount{
+    color: green;
+}
+.summaryList .checkPrice span{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.shipmentSection .contactSection .form, .shipmentSection .paymentSection .form{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px 10px;
+}
+.shipmentSection .contactSection .form input, .shipmentSection .paymentSection .form input{
+    font-size: 18px;
+    padding: 5px 3px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+}
+.shipmentSection .contactSection .form .czInfo, .shipmentSection .paymentSection .form .cardDetails{
+    display: flex;
+    gap: 10px;
+}
+.shipmentSection .contactSection .form span{
+    display: flex;
+    gap: 5px;    
+}
+.shipmentSection .contactSection .form span p{
+    font-size: 25px;
+}
+.shipmentSection .contactSection .form select{
+    width: 20%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.shipmentSection .contactSection .form select option{
+    font-size: 15px;
+}
+
+.shipmentSection .paymentSection .form input{
+    width: 30%;
+}
+.shipmentSection .paymentSection .form .cardDetails{
+    width: 38%;
+}
+
+.placeOrderBtn{
+    display: flex;
+    justify-content: center;
+}
+.placeOrderBtn .orderBtn{
+    /* border: 2px solid black; */
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    width: 20%;
+    margin-left: 78%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(32, 44, 61, 0.781);
+}
+.placeOrderBtn .orderBtn:hover{
+    background-color: rgba(32, 44, 61, 0.781);
+    color: white;
+}
+
+.orderSummarySection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.orderSummarySection .orderDetails span{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:1024px){
+    
+    .checkContainer{
+        height:865px;
+        width: 100%;
+    }
+    
+    .summaryList .checkPrice p{
+        font-size: 17px;
+    }
+
+    .shipmentSection .contactSection .form .czInfo{
+        flex-direction: column;
+    }
+    .shipmentSection .contactSection .form select{
+        width: 100%;
+    }
+
+    .shipmentSection .paymentSection .form input{
+        width: 100%;
+    }
+    .shipmentSection .paymentSection .form .cardDetails{
+        width: 100%;
+    }
+
+    .placeOrderBtn .orderBtn{
+        width: 100%;
+        margin: 0;
+    }
+}

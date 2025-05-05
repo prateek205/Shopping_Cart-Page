@@ -1,0 +1,81 @@
+.summaryCard{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.sTitle{
+    text-align: center;
+    padding: 10px 0px;
+}
+.sTitle h3{
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.summaryDetail, .sTotalPriceSection{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.summaryHeading, .summaryPrice{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+span{
+    font-size: 20px;
+}
+
+.summaryPrice{
+    text-align: right;
+}
+
+.sTotalPrice span, .sTotal span{
+    font-weight: bold;
+    font-size: 25px;
+}
+.sDiscountAmt span, .sShippingPrice span{
+    color: green;
+    font-weight: bold;
+}
+
+.checkOut{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkBtn{
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 0px;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 5px rgba(32, 44, 61, 0.781);
+}
+.checkBtn:hover{
+    background-color: rgba(32, 44, 61, 0.781);
+    color: white;
+}
+
+
+@media only screen and (max-width:320px){
+    .summaryDetail, .sTotalPriceSection{
+        padding: 0;
+    }
+}
