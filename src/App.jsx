@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import Product from "./components/product";
+import Product from "./components/Product";
 import Cart from "./components/Cart";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
