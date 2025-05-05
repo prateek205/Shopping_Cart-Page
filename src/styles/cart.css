@@ -134,6 +134,7 @@
     /* margin-top: 5px; */
 }
 .btn{
+    font-family: "Lato", sans-serif;
     padding: 8px 10px;
     border: none;
     outline: none;
@@ -163,6 +164,7 @@
     justify-content: center;
 }
 .remBtn{
+    font-family: "Lato", sans-serif;
     border: none;
     outline: none;
     border: 1px solid black;

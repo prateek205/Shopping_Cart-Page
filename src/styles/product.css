@@ -96,6 +96,7 @@
     align-items: center;
 }
 .cardbtn .addBtn{
+    font-family: "Lato", sans-serif;
     width: 100%;
     font-size: 16px;
     font-weight: bold;

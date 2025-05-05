@@ -54,6 +54,7 @@ span{
     justify-content: center;
 }
 .checkBtn{
+    font-family: "Lato", sans-serif;
     width: 100%;
     font-size: 25px;
     font-weight: bold;
