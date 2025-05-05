@@ -27,22 +27,22 @@ const Cart = () => {
                   <div className="cImage">
                     <img src={item.images} alt="Images" />
                   </div>
-                  <div className="cCardInfo">
-                    <div className="cCartDetail">
-                      <div className="cTitle">
+                  <div className="CardInfo">
+                    <div className="CartDetail">
+                      <div className="cartTitle">
                         <h3 className="title">{item.title.slice(0, 200)}</h3>
                       </div>
-                      <div className="cPriceDetail">
-                        <div className="cDiscountPrice">
+                      <div className="cartPriceDetail">
+                        <div className="cartDiscountPrice">
                           <p>
                             &#8377;{getDiscountPrice(item.price, item.discount)}
                             /-
                           </p>
                         </div>
-                        <div className="cOriginalPrice">
+                        <div className="cartOriginalPrice">
                           <p>&#8377;{item.price}/-</p>
                         </div>
-                        <div className="cDiscount">
+                        <div className="cartDiscount">
                           <p>{item.discount}%off</p>
                         </div>
                       </div>

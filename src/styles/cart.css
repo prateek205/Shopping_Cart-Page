@@ -80,38 +80,38 @@
     padding: 10px;
 }
 
-.cCardInfo{
+.CardInfo{
     /* border: 2px solid black; */
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.cCartDetail{
+.CartDetail{
     /* border: 2px solid black; */
     padding: 10px 5px;
     width: 100%;
 }
-.cTitle .title{
+.cartTitle .title{
     font-size: 20px;
     padding-bottom: 5px;
 }
-.cPriceDetail{
+.cartPriceDetail{
     display: flex;
     align-items: center;
     gap: 10px;
     padding-bottom: 5px;
     margin-top: 5px;
 }
-.cDiscountPrice p{
+.cartDiscountPrice p{
     font-size: 20px;
     font-weight: bold;
 }
-.cOriginalPrice p{
+.cartOriginalPrice p{
     font-size: 15px;
     color: grey;
     text-decoration: line-through;
 }
-.cDiscount p{
+.cartDiscount p{
     font-size: 18px;
     color: green;
     font-weight: bold;
